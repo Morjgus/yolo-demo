@@ -893,6 +893,20 @@ wheels = [
 ]
 
 [[package]]
+name = "pnnx"
+version = "20251119"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "torch" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/43/c3/49fbf840da032fc07192a2c704993c28b59bbb580fb56dbddb8a48c34bdf/pnnx-20251119-py3-none-macosx_10_9_universal2.macosx_10_9_x86_64.macosx_11_0_arm64.whl", hash = "sha256:6885c240ab0e9943b0cc093e63c3d26a3bcf985f6fa3aa984dee2bca1a0a9e5b", size = 52759831, upload-time = "2025-11-19T09:47:53.034Z" },
+    { url = "https://files.pythonhosted.org/packages/6f/41/a379eee5f9690205a006ae873c52713e7dd46629eb991a9f1e66d3e4a00b/pnnx-20251119-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:1be37ea5ac8fab5af0481833fefd8cd5112a320754083c5da1ffcf3b03aee348", size = 23406322, upload-time = "2025-11-19T09:47:56.61Z" },
+    { url = "https://files.pythonhosted.org/packages/ef/00/e4adf7b6a9a4d1af10b41df517322ebdc2624502c9d1df4004edb73904ab/pnnx-20251119-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:dc63442a0539e2e66b9287496a53d706b69f4bcea5d91511f9e9c6ad40e01161", size = 27690529, upload-time = "2025-11-19T09:48:00Z" },
+    { url = "https://files.pythonhosted.org/packages/10/20/35807f1bd5927e7e0e3cafb2a2c7f6b85a71626af29379fd9279e0d885f3/pnnx-20251119-py3-none-win_amd64.whl", hash = "sha256:c562c4f68b704c7b48effb329665ddea38a87191567deef4411c87f6b1f5da4d", size = 17934590, upload-time = "2025-11-19T09:48:02.922Z" },
+]
+
+[[package]]
 name = "polars"
 version = "1.35.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1418,6 +1432,7 @@ source = { editable = "." }
 dependencies = [
     { name = "ncnn" },
     { name = "opencv-python-headless" },
+    { name = "pnnx" },
     { name = "streamlit" },
     { name = "ultralytics" },
 ]
@@ -1426,6 +1441,7 @@ dependencies = [
 requires-dist = [
     { name = "ncnn", specifier = ">=1.0.20250916" },
     { name = "opencv-python-headless" },
+    { name = "pnnx", specifier = ">=20251119" },
     { name = "streamlit" },
     { name = "ultralytics" },
 ]

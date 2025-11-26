@@ -12,6 +12,7 @@ dependencies = [
     "streamlit",
     "ultralytics",
     "opencv-python-headless",
+    "pnnx>=20251119",
 ]
 
 [tool.setuptools]
