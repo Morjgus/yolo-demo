@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yolo-obj-detection"
+version = "0.1.0"
+description = "YOLO 11n Object Detection App"
+requires-python = "==3.12.*"
+dependencies = [
+    "streamlit",
+    "ultralytics",
+#    "opencv-python-headless",
+]
+
+[tool.setuptools]
+py-modules = ["app"]
