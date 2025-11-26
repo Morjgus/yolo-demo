@@ -52,8 +52,8 @@ def main():
         source = st.sidebar.text_input("Enter Video Stream URL (e.g., RTSP, HTTP)")
     elif source_type == "Pi Camera":
         # GStreamer pipeline for Pi Camera (libcamera)
-        # Adjust width/height/framerate as needed
-        source = "libcamerasrc ! video/x-raw, width=640, height=480, framerate=30/1 ! videoconvert ! videoscale ! video/x-raw, format=BGR ! appsink"
+        # Simplified pipeline with appsink settings for low latency
+        source = "libcamerasrc ! video/x-raw, width=640, height=480, framerate=30/1 ! videoconvert ! video/x-raw, format=BGR ! appsink drop=1 sync=0"
 
 
     # Session state for running
