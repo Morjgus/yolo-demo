@@ -8,9 +8,10 @@ version = "0.1.0"
 description = "YOLO 11n Object Detection App"
 requires-python = "==3.12.*"
 dependencies = [
+    "ncnn>=1.0.20250916",
     "streamlit",
     "ultralytics",
-#    "opencv-python-headless",
+    "opencv-python-headless",
 ]
 
 [tool.setuptools]
